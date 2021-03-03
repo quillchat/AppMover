@@ -28,10 +28,10 @@ public enum AppMover {
         }
         
         let alert = NSAlert()
-        alert.messageText = "Move to Applications folder"
-        alert.informativeText = "\(Bundle.main.localizedName) needs to move to your Applications folder in order to work properly."
+        alert.messageText = "Move to Applications Folder"
+        alert.informativeText = "\(Bundle.main.localizedName) can move to your Applications folder in order to keep your Downloads folder clean."
         if needAuth {
-            alert.informativeText.append(" You need to authenticate with your administrator password to complete this step.")
+            alert.informativeText.append(" You will need to authenticate with your administrator password to complete this step.")
         }
         alert.addButton(withTitle: "Move to Applications Folder")
         alert.addButton(withTitle: "Do Not Move")
